@@ -1,0 +1,27 @@
+/*
+   환경설정
+    gulfif(조건, 참일때 실행되는 동작, 거짓일 떄 실행되는 동작)
+*/
+//검사 , 병합, 압축 설정
+{
+  "lint" : true,
+  "concat" : true,
+  "uglify" : true,
+  "rename" : false,
+
+
+  // 파일 경로 (path) 설정
+  "path" : {
+    "css": {
+      "src": ["src/css/**/*.css", "!src/css/style.css"],
+      "dest": "dist/css/",
+      "filename": "style.css"
+    },
+
+    "js": {
+      "src": ["src/js/libs/**/*.js"],
+      "dest": "dist/js/",
+      "filename": "script-library.js"
+    }
+  }
+}
